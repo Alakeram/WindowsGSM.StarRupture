@@ -33,20 +33,39 @@ WindowsGSM >= 1.21.0
 
 
 
-# Starting A Server (IMPORTANT!!!)
+# Updating Plugin
+
+
+
+Before updating plugin, PLEASE backup your save files just in case some of the settings that are created do not break your save.
+
+If you have a server already made on plugin before 1.6 you will need to open the DSSettings.txt file and change the session name to what you named it originally (Can be found in your save file location as the filename)
+
+
+
+Also make sure to just replace the StarRupture.cs file in the plugin's folder (GSM Servers\\plugins\\StarRupture.cs)
+
+
+
+# Starting A Server
 
 **\*This may change depending on updates\***
 
 
 
-1. Open the game
-2. Goto Manage Server
-3. Enter LOCAL IP and port (xx.xx.xx.xx:7777)
-4. Enter a password (This will be used to get back into this manage server section if you need to reload the server)
-5. When you see the server options: Click Change Password (this is the password to get into the server) and click Confirm.
-6. Click New Game, Enter a session name (Cannot enter spaces)
-7. IMPORTANT! Only click "START GAME" in the bottom right corner ONCE! multiple clicks will bug the server.
-8. Exit this menu, your server is now started. While the server is started, you CANNOT re-enter the manage server, it will just stay stuck loading (This is probably a bug.)
+If you want a Password on the server, you will need to go to https://starrupture.agngaming.com/passwords/ and generate a password, I don't have the RSA PK to allow the windows GSM to create one.
+
+
+
+paste it into the password json files at root level:
+
+
+
+serverfiles\\PlayerPassword.json (Server password)
+
+serverfiles\\password.json (Server Settings Password)
+
+
 
 
 
@@ -60,21 +79,6 @@ WindowsGSM >= 1.21.0
 2. Click on Join Game (On Main Menu)
 3. Click Dedicated Server
 4. Enter your PUBLIC IP and Port (xxx.xxx.xxx.xxx:7777), and server password (This was set on the step 5 of Starting A Server)
-
-
-
-# Loading A Server
-
-**\*If you shut down the server or reboot the server for any reason, you will have to LOAD the session in order to rejoin server\***
-
-
-
-1. Go back into the Manage Server after the server starts up
-2. Enter your password (Set during Starting A Server section)
-3. click LOAD GAME
-4. Select your session name
-5. click LOAD GAME in the bottom right corner ONCE **(Just like new game in starting a server, it will bug if you click multiple times!)**
-6. Follow Joining A Server steps to get back into your server.
 
 
 
