@@ -44,7 +44,7 @@ namespace WindowsGSM.Plugins
         // - Game server default values
         public string Port = "7777"; // Default port
         public string QueryPort = "27015"; // Default query port. This is the port specified in the Server Manager in the client UI to establish a server connection.
-		public string Defaultmap = "Default";
+		public string Defaultmap = @"Game/Chimera/Maps/ChimeraMain/ChimeraMain";
 		public string Maxplayers = "4"; // Default maxplayers
 		public string Additional = "-log"; // Additional server start parameter
 
